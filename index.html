@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://blinkit.com/images/faviconChange.ico" type="image/x-icon">
+    <title>Blinkit Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- This is navbar -->
+      <nav
+        class="nav-section d-flex justify-content-between align-items-center bg-light border-bottom px-4 py-1"
+      >
+        <svg
+          width="134"
+          height="30"
+          viewBox="0 0 114 30"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M14.3342 7.186C16.2619 7.186 17.9832 7.66644 19.4978 8.62732C21.0262 9.57447 22.2242 10.9197 23.0917 12.663C23.9316 14.3377 24.3516 16.3075 24.3516 18.5724C24.3516 20.7687 23.9316 22.7316 23.0917 24.4612C22.2517 26.1908 21.0675 27.5429 19.5391 28.5175C17.9969 29.5058 16.2619 30 14.3342 30C12.9297 30 11.6078 29.7117 10.3685 29.1352C9.12927 28.5587 8.06901 27.7488 7.18775 26.7056V29.4852H0V0H7.18775V10.4598C8.06901 9.41661 9.12927 8.61359 10.3685 8.05079C11.6078 7.47426 12.9297 7.186 14.3342 7.186ZM12.1861 24.0494C13.2051 24.0494 14.1139 23.8161 14.9125 23.3493C15.7112 22.8826 16.3377 22.2306 16.7921 21.3933C17.2465 20.5697 17.4737 19.6294 17.4737 18.5724C17.4737 17.5429 17.2465 16.6095 16.7921 15.7721C16.3377 14.9348 15.7112 14.2828 14.9125 13.8161C14.1139 13.3493 13.2051 13.116 12.1861 13.116C11.2223 13.116 10.3617 13.3493 9.60432 13.8161C8.84699 14.269 8.2549 14.9073 7.82804 15.731C7.40118 16.5683 7.18775 17.5154 7.18775 18.5724C7.18775 19.6294 7.40118 20.5765 7.82804 21.4139C8.2549 22.2375 8.84699 22.8826 9.60432 23.3493C10.3617 23.8161 11.2223 24.0494 12.1861 24.0494Z"
+            fill="#F8CB46"
+          ></path>
+          <path
+            d="M25.3356 29.4852V0H32.5233V29.4852H25.3356Z"
+            fill="#F8CB46"
+          ></path>
+          <path
+            d="M34.5607 29.4852V7.68016H41.7071V29.4852H34.5607Z"
+            fill="#F8CB46"
+          ></path>
+          <path
+            d="M57.2319 7.186C58.7603 7.186 60.1372 7.5429 61.3627 8.25669C62.5882 8.95676 63.5521 9.94509 64.2544 11.2217C64.9291 12.512 65.2664 13.9739 65.2664 15.6074V29.4852H58.4092V17.2135C58.4092 16.4173 58.2508 15.7104 57.9341 15.0927C57.6312 14.4612 57.1974 13.9739 56.6329 13.6307C56.0821 13.2876 55.4349 13.116 54.6914 13.116C53.9891 13.116 53.3419 13.2876 52.7498 13.6307C52.1577 13.9602 51.6965 14.4132 51.366 14.9897C51.0218 15.5388 50.8496 16.1839 50.8496 16.9252L50.8083 29.4852H43.6619V7.68016H50.8083V10.1716C51.483 9.23816 52.3849 8.51064 53.5141 7.98902C54.6432 7.45367 55.8824 7.186 57.2319 7.186Z"
+            fill="#F8CB46"
+          ></path>
+          <path
+            d="M81.0597 17.2135L89.1769 29.4852H81.0597L76.3091 21.7639L74.1198 24.2965V29.4852H66.932V0H74.1198V16.2869L81.0184 7.68016H89.1356L81.0597 17.2135Z"
+            fill="#F8CB46"
+          ></path>
+          <path
+            d="M34.5569 0.00232667H41.7267V5.59207H34.5569V0.00232667Z"
+            fill="#F8CB46"
+          ></path>
+          <path
+            d="M90.3176 29.4198V7.61479H97.464V29.4198H90.3176Z"
+            fill="#54B226"
+          ></path>
+          <path
+            d="M112.575 23.2634L114 27.855C113.353 28.4727 112.534 28.9737 111.542 29.3581C110.564 29.7424 109.607 29.9346 108.671 29.9346C107.322 29.9346 106.117 29.6395 105.057 29.0492C103.996 28.4452 103.17 27.6079 102.578 26.5372C101.986 25.494 101.69 24.2929 101.69 22.9339V13.3183H98.819V7.61479H101.69V0.00241089H108.547V7.61479H113.071V13.3183H108.547V21.6161C108.547 22.3162 108.733 22.8859 109.105 23.3251C109.477 23.7644 109.952 23.984 110.53 23.984C110.943 23.984 111.329 23.9223 111.687 23.7987C112.045 23.6752 112.341 23.4967 112.575 23.2634Z"
+            fill="#54B226"
+          ></path>
+          <path
+            d="M90.2609 0.00241089H97.4307V5.59215H90.2609V0.00241089Z"
+            fill="#54B226"
+          ></path>
+        </svg>
+        <div class="vertical-line"></div>
+
+        <div class="location">
+          <h5>Delivery in 12 minutes</h5>
+          <p>Rohini Marg, Delhi <i class="fa-solid fa-sort-down"></i></p>
+        </div>
+
+        <div class="search-div">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search  'Milk'"
+          />
+        </div>
+
+        <div class="top-btn">
+          <button class="btn btn-lg">Login</button>
+          <button
+            class="my-cart btn btn-lg btn-sucess rounded-4 px-3 py-3 fw-bold"
+            type="submit"
+          >
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff"></i> My
+            Cart
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <section class="hero-section d-flex justify-content-center vw-100">
+        <img src="/Assets/top-banner.webp" alt="topbanner" />
+      </section>
+
+      <div class="my-container">
+        <div class="my-list">
+          <img src="/Assets/morning-banner.avif" />
+          <img src="/Assets/world-cup.avif" />
+          <img src="/Assets/pharmacy.avif" />
+          <img src="/Assets/print_crystal.avif" />
+          <img src="/Assets/no-time.avif" />
+          <img src="/Assets/Pet-Care.avif" />
+        </div>
+      </div>
+      <section class="d-flex justify-content-center vw-100">
+        <div class="my-categories d-flex justify-content-between flex-wrap">
+          <img src="Assets/paan-corner.avif" alt="category_img" />
+          <img src="Assets/dairy.avif" alt="category_img" />
+          <img src="Assets/fruit.avif" alt="category_img" />
+          <img src="Assets/cold-drink.avif" alt="category_img" />
+          <img src="Assets/snack.avif" alt="category_img" />
+          <img src="Assets/breakfast.avif" alt="category_img" />
+          <img src="Assets/sweet.avif" alt="category_img" />
+          <img src="Assets/bakery.avif" alt="category_img" />
+          <img src="Assets/tea.avif" alt="category_img" />
+          <img src="Assets/atta.avif" alt="category_img" />
+          <img src="Assets/masala.avif" alt="category_img" />
+          <img src="Assets/sauce.avif" alt="category_img" />
+          <img src="Assets/chicken.avif" alt="category_img" />
+          <img src="Assets/organic.avif" alt="category_img" />
+          <img src="Assets/baby.avif" alt="category_img" />
+          <img src="Assets/pharma.avif" alt="category_img" />
+          <img src="Assets/cleaning.avif" alt="category_img" />
+          <img src="Assets/home.avif" alt="category_img" />
+          <img src="Assets/personal.avif" alt="category_img" />
+          <img src="Assets/pet.avif" alt="category_img" />
+        </div>
+      </section>
+
+      <!-- item section  1st row-->
+
+      <div class="category-section">
+        <div class="title">
+          <h2>Dairy, Bread & Eggs</h2>
+          <p class="see-all"><a href="#">see all</a></p>
+        </div>
+        <div class="category-section-row">
+          <div class="my-list p-3">
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/nestle.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">
+                Nestle Milkmaid Sweetened Condenced
+              </div>
+              <div class="product-weight">380 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹144</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/amul.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Amul Gold Full Cream Fresh Milk</div>
+              <div class="product-weight">500 ml</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹33</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/blend.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Amul Blend Diced Cheese</div>
+              <div class="product-weight">200 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹122</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/paneer.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Mother Dairy Paneer</div>
+              <div class="product-weight">200 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹95</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/mother-classic.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Mother Dairy Classic Curd</div>
+              <div class="product-weight">400 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹34</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/harvest.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Harvest Gold - White Bread</div>
+              <div class="product-weight">350 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹25</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/amul-butter.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Amul Salted Butter</div>
+              <div class="product-weight">100 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹58</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/table-white.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Table White White Eggs (6 pieces)</div>
+              <div class="product-weight">6 pieces</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹57</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/harty.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Harvest Gold Hearty Brown Bread</div>
+              <div class="product-weight">400 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹45</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/toned-milk.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Amul Taaza Toned Fresh Milk</div>
+              <div class="product-weight">500 ml</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹27</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/atta.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">
+                Harvest Gold 100% Atta Whole Wheat Bread
+              </div>
+              <div class="product-weight">450 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹50</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/amul-masti.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Amul Masti Curd</div>
+              <div class="product-weight">400 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹34</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- item section  2nd row-->
+
+      <div class="category-section">
+        <div class="title">
+          <h2>Rolling paper & tobacco</h2>
+          <p class="see-all"><a href="#">see all</a></p>
+        </div>
+        <div class="category-section-row">
+          <div class="my-list p-3">
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/ulitimate.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">10 MINS</i>
+              </div>
+              <div class="product-title">
+                Ultimate Rolling Paper with Filter Tips
+              </div>
+              <div class="product-weight">64 pieces</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹90</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/brown.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">10 MINS</i>
+              </div>
+              <div class="product-title">Brown Rolling Paper Cones - Stash Pro</div>
+              <div class="product-weight">6 pieces</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹90</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/slash.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Brown Rolling Paper (King Size) - Stash Pro</div>
+              <div class="product-weight">1 unit</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹200</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/roach.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">10 MINS</i>
+              </div>
+              <div class="product-title">Brown Rolling Paper + Roach with Crushing</div>
+              <div class="product-weight">1 pack</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹222</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/raw.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Classic Filter Tips & Rolling Paper</div>
+              <div class="product-weight">1 pack</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹234</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/slim.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">White Slim Rolling Paper (King Size)</div>
+              <div class="product-weight">1 pack</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹255</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/black.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">10 MINS</i>
+              </div>
+              <div class="product-title">Black Classic Slim Rolling Paper</div>
+              <div class="product-weight">1 pack</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹158</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/brown.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">10 MINS</i>
+              </div>
+              <div class="product-title">Brown Rolling Paper Cones - Stash Pro</div>
+              <div class="product-weight">6 pieces</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹90</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/slash.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Brown Rolling Paper (King Size) - Stash Pro</div>
+              <div class="product-weight">1 unit</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹200</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/roach.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">10 MINS</i>
+              </div>
+              <div class="product-title">Brown Rolling Paper + Roach with Crushing</div>
+              <div class="product-weight">1 pack</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹222</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/raw.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Classic Filter Tips & Rolling Paper</div>
+              <div class="product-weight">1 pack</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹234</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/slim.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">White Slim Rolling Paper (King Size)</div>
+              <div class="product-weight">1 pack</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹255</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/black.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">10 MINS</i>
+              </div>
+              <div class="product-title">Black Classic Slim Rolling Paper</div>
+              <div class="product-weight">1 pack</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹158</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- item section  3rd row-->
+
+      <div class="category-section">
+        <div class="title">
+          <h2>Snacks & Munchies</h2>
+          <p class="see-all"><a href="#">see all</a></p>
+        </div>
+        <div class="category-section-row">
+          <div class="my-list p-3">
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/plain.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">10 MINS</i>
+              </div>
+              <div class="product-title">
+                Haldiram's Plain Bhujia
+              </div>
+              <div class="product-weight">200 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹56</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/salted.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">10 MINS</i>
+              </div>
+              <div class="product-title">Haldiram's Classic Salted Peanut Namkeen</div>
+              <div class="product-weight">200 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹53</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/masala-nam.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">10 MINS</i>
+              </div>
+              <div class="product-title">Lay's India's Magic Masala Chips (40 g)
+              </div>
+              <div class="product-weight">40 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹20</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/mixture.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">10 MINS</i>
+              </div>
+              <div class="product-title">Haldiram's Lite Mixture Namkeen</div>
+              <div class="product-weight">150 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹35</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/sweet-nam.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">10 MINS</i>
+              </div>
+              <div class="product-title">Doritos Sweet Chilli Flavour Nachos</div>
+              <div class="product-weight">82.5 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹45</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/tadka.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Haldiram's Punjabi Tadka Namkeen
+              </div>
+              <div class="product-weight">250 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹54</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/bhel.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Haldiram's Fatafat Bhel Namkeen</div>
+              <div class="product-weight">150 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹38</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/cream.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Lay's American Style Cream & Onion Potato</div>
+              <div class="product-weight">80 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹47</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/kurkure.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Kurkure Masala Munch Crisps</div>
+              <div class="product-weight">77 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹25</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/boondi.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Haldiram's Boondi Namkeen</div>
+              <div class="product-weight">220 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹57</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/dnv.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">
+                DNV Appalam Papad
+              </div>
+              <div class="product-weight">100 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹50</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/bhelpuri.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Haldiram's Bhelpuri / Bhel Namkeen</div>
+              <div class="product-weight">200 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹54</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- item section  4th row-->
+
+      <div class="category-section">
+        <div class="title">
+          <h2>Hookah</h2>
+          <p class="see-all"><a href="#">see all</a></p>
+        </div>
+        <div class="category-section-row">
+          <div class="my-list p-3">
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/chief.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">10 MINS</i>
+              </div>
+              <div class="product-title">
+                Chief Commissioner Herbal Hookah Flavor
+              </div>
+              <div class="product-weight">50 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹100</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/brain.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">10 MINS</i>
+              </div>
+              <div class="product-title">Brain Freeze Up Herbal Hookah Flavor</div>
+              <div class="product-weight">50 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹100</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/paan.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">10 MINS</i>
+              </div>
+              <div class="product-title">Paan Raas Herbal Hookah Flavor</div>
+              <div class="product-weight">50 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹100</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/watermelon.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">10 MINS</i>
+              </div>
+              <div class="product-title">Watermelon Herbal Hookah Flavor</div>
+              <div class="product-weight">50 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹95</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/kiwi.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Kiwi Herbal Hookah Flavor</div>
+              <div class="product-weight">40 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹100</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/natural.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Natural Spring Water Herbal Hookah Flavor</div>
+              <div class="product-weight">50 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹100</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/harbal.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Kiwi Herbal Hookah Flavor</div>
+              <div class="product-weight">100 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹158</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/water.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Natural Spring Water Herbal Hookah</div>
+              <div class="product-weight">50 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹100</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/apple.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Double Apple Herbal Hookah Flavor</div>
+              <div class="product-weight">40 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹105</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/bombay.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Bombay Paan Masala Herbal Hookah Flavor</div>
+              <div class="product-weight">50 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹100</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/magai.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">
+                Magai Paan Herbal Hookah Flavor
+              </div>
+              <div class="product-weight">50 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹100</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/grape.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Grape Herbal Hookah Flavor</div>
+              <div class="product-weight">50 g</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹100</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- item section  5th row-->
+
+      <div class="category-section">
+        <div class="title">
+          <h2>Cold Drinks & Juices</h2>
+          <p class="see-all"><a href="#">see all</a></p>
+        </div>
+        <div class="category-section-row">
+          <div class="my-list p-3">
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/rooh.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">
+                Hamdard Rooh Afza Rose Sharbat
+
+              </div>
+              <div class="product-weight">750 ml</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹170</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/coconut.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Storia 100% Tender Coconut Water
+              </div>
+              <div class="product-weight">1 L</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹116</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/active.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Real Activ 100% Orange Juice</div>
+              <div class="product-weight">1 L</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹132</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/mix-juice.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">B Natural Mixed Fruit Juice</div>
+              <div class="product-weight">200 ml</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹95</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/red-bull.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Red Bull Energy Drink (250 ml)</div>
+              <div class="product-weight">250 ml</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹124</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/bisleri.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Red Bull Energy Drink (250 ml)</div>
+              <div class="product-weight">250 ml</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹125</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/cola.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Coca-Cola Soft Drink (750 ml)</div>
+              <div class="product-weight">750 ml</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹58</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/catch.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Catch Club Soda Water</div>
+              <div class="product-weight">750 ml</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹27</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/real.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">Real Activ 100% Apple Juice</div>
+              <div class="product-weight">1 L</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹106</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/multi.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">10 MINS</i>
+              </div>
+              <div class="product-title">Real Activ Fibre+ Multi Fruit Juice</div>
+              <div class="product-weight">500 ml</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹67</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/homemade.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">12 MINS</i>
+              </div>
+              <div class="product-title">
+                Hommade Lemoneez Syrup
+              </div>
+              <div class="product-weight">250 ml</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹70</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+
+            <div class="card shadow my-card p-3 d-inline-block flex-column">
+              <img src="Assets/string.avif" />
+              <div class="product-time">
+                <i class="fa-solid fa-stopwatch">10 MINS</i>
+              </div>
+              <div class="product-title">Sting Energy Drink (250 ml)</div>
+              <div class="product-weight">250 ml</div>
+              <div class="product-price d-flex w-100 justify-content-between">
+                <p>₹40</p>
+                <button class="btn btn-outline-success">ADD</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container-1 d-flex">
+        <section class="section-1">
+          <h4>Useful Links</h4>
+          <table>
+            <tr>
+              <td><a class="hello" href="#">About</a></td>
+              <td><a class="hello" href="#">Privacy</a></td>
+              <td><a class="hello" href="#">Partner</a></td>
+            </tr>
+            <tr>
+              <td><a class="hello" href="#">Career</a></td>
+              <td><a class="hello" href="#">Terms</a></td>
+              <td><a class="hello" href="#">Express</a></td>
+            </tr>
+            <tr>
+              <td><a class="hello" href="#">Blog</a></td>
+              <td><a class="hello" href="#">FAQs</a></td>
+              <td><a class="hello" href="#">Seller</a></td>
+            </tr>
+            <tr>
+              <td><a class="hello" href="#">Press</a></td>
+              <td><a class="hello" href="#">Security</a></td>
+              <td><a class="hello" href="#">Spotlight</a></td>
+            </tr>
+            <tr>
+              <td><a class="hello" href="#">Lead</a></td>
+              <td><a class="hello" href="#">Mobile</a></td>
+              <td><a class="hello" href="#">Warehouse</a></td>
+            </tr>
+            <tr>
+              <td><a class="hello" href="#">Value</a></td>
+              <td><a class="hello" href="#">Contact</a></td>
+              <td><a class="hello" href="#">Deliver</a></td>
+            </tr>
+          </table>
+        </section>
+
+        <section class="section-2">
+          <h4 class="see-all">Categories <a href="#">see all</a></h4>
+          <br>
+          <table>
+            <tr>
+              <td><a class="hello" href="#">Vegetables & Fruits</a></td>
+              <td><a class="hello" href="#">Dairy & Breakfast</a></td>
+              <td><a class="hello" href="#">Munchies</a></td>
+            </tr>
+            <tr>
+              <td><a class="hello" href="#">Cold Drinks & Juices</a></td>
+              <td><a class="hello" href="#">Instant & Frozen Food</a></td>
+              <td><a class="hello" href="#">Tea, Coffee & Health Drinks</a></td>
+            </tr>
+            <tr>
+              <td><a class="hello" href="#">Bakery & Biscuits</a></td>
+              <td><a class="hello" href="#">Sweet Tooth</a></td>
+              <td><a class="hello" href="#">Atta, Rice & Dal</a></td>
+            </tr>
+            <tr>
+              <td><a class="hello" href="#">Dry Fruits, Masala & Oil</a></td>
+              <td><a class="hello" href="#">Sauces & Spreads</a></td>
+              <td><a class="hello" href="#">Chicken, Meat & Fish</a></td>
+            </tr>
+            <tr>
+              <td><a class="hello" href="#">Paan Corner</a></td>
+              <td><a class="hello" href="#">Organic & Premium</a></td>
+              <td><a class="hello" href="#">Baby Care</a></td>
+            </tr>
+            <tr>
+              <td><a class="hello" href="#">Pharma & Wellness</a></td>
+              <td><a class="hello" href="#">Cleaning Essentials</a></td>
+              <td><a class="hello" href="#">Home & Office</a></td>
+            </tr>
+            <tr>
+              <td><a class="hello" href="#">Personal Care</a></td>
+              <td>
+                <a class="hello" href="#">Ice Creams & Frozen Desserts</a>
+              </td>
+              <td><a class="hello" href="#">Pet Care</a></td>
+            </tr>
+            <tr>
+              <td><a class="hello" href="#">Beauty & Cosmetics</a></td>
+              <td><a class="hello" href="#">Magazines</a></td>
+              <td><a class="hello" href="#">Books</a></td>
+            </tr>
+            <tr>
+              <td><a class="hello" href="#">Toys & Games</a></td>
+              <td><a class="hello" href="#">Trial new tree</a></td>
+              <td><a class="hello" href="#">Print Store</a></td>
+            </tr>
+          </table>
+        </section>
+    </div>
+
+
+    <div class="row-2 d-flex justify-content-between">
+        <div class="footer-items-1">
+            <p>© Blink Commerce Private Limited (formerly known as Grofers India Private Limited), 2016-2023
+              </p>
+        </div>
+
+        <div class="footer-items-2">
+            <p class="download">Download App</p>
+            <img src="Assets/apples.webp" alt="apple" />
+            <img src="Assets/playstore.webp" alt="playstore" />
+        </div>
+
+        <div class="footer-items-3">
+            <i class="fa-brands fa-facebook" style="color: #010409"></i>
+              <i class="fa-brands fa-square-twitter" style="color: #010409"></i>
+              <i class="fa-brands fa-square-instagram" style="color: #030811"></i>
+              <i class="fa-brands fa-linkedin" style="color: #02060d"></i>
+              <i class="fa-brands fa-square-threads" style="color: #040b15"></i>
+        </div>
+
+    </div>
+
+
+
+        <div class="row-3 p-2 text-center">
+          <p>
+            “Blinkit” is owned & managed by "Blink Commerce Private Limited"
+            (formerly known as Grofers India Private Limited) and is not
+            related, linked or interconnected in whatsoever manner or nature, to
+            “GROFFR.COM” which is a real estate services business operated by
+            “Redstone Consultancy Services Private Limited”.
+          </p>
+        </div>
+      </div>
+      <div class="made-by text-center p-2"> Made with ❤️ By <a href="https://rajat-singh.in">Rajat Singh</a></div>
+
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
